@@ -1,0 +1,13 @@
+.app-header {
+  .app-nav {
+    .menu {
+      >li {
+        &.active {
+          a {
+            background-color: yellow;
+          }
+        }
+      }
+    }
+  }
+}
