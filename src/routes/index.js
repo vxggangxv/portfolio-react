@@ -4,8 +4,8 @@ import loadable from '@loadable/component';
 // import MainPage from './pages/MainPage';
 // import AboutPage from './pages/AboutPage';
 
-const MainPage = loadable(() => import('./pages/MainPage'));
-const AboutPage = loadable(() => import('./pages/AboutPage'));
+const MainPage = loadable(() => import('../pages/MainPage'));
+const AboutPage = loadable(() => import('../pages/AboutPage'));
 
 export default () => (
   <>

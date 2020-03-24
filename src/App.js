@@ -1,8 +1,8 @@
 import React from 'react';
-import Router from './Router';
+import Router from './routes';
 import AppHeader from './components/common/AppHeader';
 import AppFooter from './components/common/AppFooter';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

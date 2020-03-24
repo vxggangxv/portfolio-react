@@ -5,7 +5,7 @@ import './AppHeader.scss';
 const AppHeader = ({ location: { pathname } }) => {
   return (
     <header className="app-header">
-      해더
+      <h1 className="page-header">해더</h1>
       <nav className="app-nav">
         <ul className="menu">
           <li className={pathname === '/' ? 'active' : ''}>

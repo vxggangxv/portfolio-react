@@ -1,4 +1,7 @@
 import React from 'react';
+// import classNames from 'classnames/bind';
+// import styles from './AppFooter.module.scss';
+// const cx = classNames.bind(styles);
 import './AppFooter.scss';
 
 const AppFooter = () => {
