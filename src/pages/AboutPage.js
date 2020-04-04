@@ -1,11 +1,11 @@
 import React from 'react';
 
-const MainPage = () => {
+const AboutPage = () => {
   return (
-    <div className="main list-container contents">
+    <div className="about-content">
       <h1 className="page-header">About Page</h1>
     </div>
   );
 };
 
-export default MainPage;
+export default AboutPage;

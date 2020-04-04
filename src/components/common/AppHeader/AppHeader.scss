@@ -1,15 +1,10 @@
 .app-header {
-  padding: 100px;
-
-  .app-nav {
-    .menu {
-      >li {
-        &.active {
-          a {
-            background-color: yellow;
-          }
-        }
-      }
-    }
-  }
+  $pl: 350px + 50px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding-left: $pl;
+  background-color: #7C92FA;
+  font-size: 25px;
+  color: #fff;
 }
