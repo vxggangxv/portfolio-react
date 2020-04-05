@@ -3,17 +3,27 @@ import { Link, withRouter } from 'react-router-dom';
 import './AppSidebar.scss';
 
 const AppSidebar = ({ location: { pathname } }) => {
-  const t = 'ative dd';
   return (
     <div className="app-sidebar">
       <div className="profile">
         <figure>
-          <img src={require('assets/img/me.jpg')} alt="프로필사진" />
+          <img src={require('assets/img/me2.jpg')} alt="프로필사진" />
           <figcaption>JunCoder</figcaption>
         </figure>
       </div>
       <nav className="nav">
         <h1 className="hide">메인메뉴</h1>
+        <div className="stack-area">
+          <p className="title">Stack</p>
+          <p className="text">
+            <span className="item">Html5</span>,&nbsp;
+            <span className="item">Css3</span>,&nbsp;
+            <span className="item">Javascript</span>,<br />
+            <span className="item">React</span>,&nbsp;
+            <span className="item">Vue</span>,<br />
+            <span className="item">Express</span>
+          </p>
+        </div>
         <ul className="menu">
           {/* <li className={`link ${pathname === '/about' ? 'active' : ''}`}> */}
           <li className={pathname === '/about' ? 'active' : ''}>
@@ -27,6 +37,7 @@ const AppSidebar = ({ location: { pathname } }) => {
           </li>
         </ul>
       </nav>
+      <small className="copyright">Made by JunCoder with React</small>
     </div>
   );
 };

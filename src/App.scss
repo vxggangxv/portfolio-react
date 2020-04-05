@@ -1,6 +1,7 @@
-@import 'assets/sass/reset';
-@import 'assets/sass/base';
-@import url(assets/fonts/notosanskr/notosanskr.css?display=swap);
+@import './assets/sass/reset';
+@import './assets/sass/base';
+@import url(./assets/fonts/notosanskr/notosanskr.css?display=swap);
+@import url(./assets/fonts/mdi/css/materialdesignicons.min.css?display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 body {
@@ -9,7 +10,13 @@ body {
 }
 
 main#main {
-  padding-left: 350px;
+  position: relative;
+  width: calc(100% - $sidebar-wd);
+  left: $sidebar-wd;
+}
+
+.page-content {
+  padding: 50px;
 }
 
 // .App {

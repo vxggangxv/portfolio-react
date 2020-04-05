@@ -1,3 +1,5 @@
+@import '../../../assets/sass/parts/variables';
+
 .app-sidebar {
   z-index: 11;
   font-family: 'Open Sans', sans-serif;
@@ -6,10 +8,10 @@
   left: 0;
   width: 350px;
   height: 100%;
-  padding: 0 60px;
   padding-top: 80px;
   background-color: #fff;
   box-sizing: border-box;
+  box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.05);
 
   .profile {
     padding-top: 20px;
@@ -26,12 +28,55 @@
         margin-top: 15px;
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 22px;
-        color: #999999;
+        color: $font-gray;
         // font-weight: 500;
       }
     }
   }
 
   .nav {
+    margin-top: 80px;
+    padding-left: 60px;
+    font-size: 25px;
+    color: $font-gray2;
+    // color: $font-color;
+    .stack-area {
+      .title {
+      }
+      .text {
+        margin-top: 10px;
+        .item {
+          font-size: 20px;
+        }
+      }
+    }
+    .menu {
+      padding-top: 20px;
+      > li {
+        margin-top: 30px;
+        > a {
+          display: block;
+          padding: 10px 0;
+        }
+        &.active {
+          > a {
+            border-right: 8px solid $primary-color;
+            color: #333333;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: $font-ntss;
+    font-size: 16px;
+    color: $primary-color;
   }
 }
