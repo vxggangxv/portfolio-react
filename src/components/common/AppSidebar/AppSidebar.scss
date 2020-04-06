@@ -16,6 +16,7 @@
   .profile {
     padding-top: 20px;
     text-align: center;
+
     figure {
       img {
         width: 150px;
@@ -24,10 +25,11 @@
         border: 1px solid #ddd;
         box-sizing: border-box;
       }
+
       figcaption {
         margin-top: 15px;
         font-family: 'Noto Sans KR', sans-serif;
-        font-size: 22px;
+        font-size: 16px;
         color: $font-gray;
         // font-weight: 500;
       }
@@ -37,29 +39,35 @@
   .nav {
     margin-top: 80px;
     padding-left: 60px;
-    font-size: 25px;
+    font-size: 20px;
     color: $font-gray2;
+
     // color: $font-color;
     .stack-area {
-      .title {
-      }
+      .title {}
+
       .text {
         margin-top: 10px;
+
         .item {
           font-size: 20px;
         }
       }
     }
+
     .menu {
       padding-top: 20px;
-      > li {
+
+      >li {
         margin-top: 30px;
-        > a {
+
+        >a {
           display: block;
           padding: 10px 0;
         }
+
         &.active {
-          > a {
+          >a {
             border-right: 8px solid $primary-color;
             color: #333333;
             font-weight: 600;
@@ -68,6 +76,7 @@
       }
     }
   }
+
   .copyright {
     position: absolute;
     left: 0;
@@ -76,7 +85,7 @@
     padding-bottom: 20px;
     text-align: center;
     font-family: $font-ntss;
-    font-size: 16px;
+    font-size: 14px;
     color: $primary-color;
   }
 }

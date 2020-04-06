@@ -5,23 +5,36 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 110px;
+  height: 80px;
   padding-left: 100px;
+  background-color: #fff;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+
   .input-cover {
     display: flex;
     align-items: center;
     width: 270px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #eee;
     color: #ddd;
+
     .mdi-magnify {
+      position: relative;
+      top: 2px;
       font-size: 34px;
+      // cursor: pointer;
+
+      &.active {
+        color: $font-color;
+      }
     }
+
     .form-input.search {
-      font-size: 24px;
+      font-size: 22px;
       border: 0;
       box-shadow: none;
+      outline: none;
+
       &::placeholder {
         color: #dddddd;
       }

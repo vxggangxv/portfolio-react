@@ -11,7 +11,7 @@ body {
 
 main#main {
   position: relative;
-  width: calc(100% - $sidebar-wd);
+  width: calc(100% - #{$sidebar-wd});
   left: $sidebar-wd;
 }
 

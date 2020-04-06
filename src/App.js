@@ -4,6 +4,7 @@ import AppHeader from 'components/common/AppHeader';
 import AppSidebar from 'components/common/AppSidebar';
 // import AppFooter from 'components/common/AppFooter';
 import './App.scss';
+// import { Counter } from './store/counter/Counter';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Router></Router>
       </main>
       {/* <AppFooter></AppFooter> */}
+      {/* <Counter></Counter> */}
     </div>
   );
 }
