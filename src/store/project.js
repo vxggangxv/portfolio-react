@@ -14,6 +14,11 @@ const projectListData = [
   {
     name: 'Conacoin3',
     date: '2020.03.25',
+    stack: 'html5, css3, javascript, vue'
+  },
+  {
+    name: 'Conacoin4',
+    date: '2020.03.25',
     stack: 'html5, css3, javascript, express'
   },
 ];
@@ -49,9 +54,12 @@ export const slice = createSlice({
           }
         });
       })
-      console.log(searchList);
+      // console.log(searchList);
       const set = Array.from(new Set(searchList));
-      console.log(set);
+      // console.log(set);
+      set.sort(function (a, b) { // 오름차순
+        return a - b;
+      });
       state.searchList = set;
 
       // state.searchList = state.projectList.filter(str => {
