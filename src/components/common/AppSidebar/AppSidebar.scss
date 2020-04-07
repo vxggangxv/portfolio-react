@@ -1,6 +1,8 @@
 @import '../../../assets/sass/parts/variables';
 
 .app-sidebar {
+  // background: url('/img/me2.jpg');
+  // background: url('../../../assets/img/me2.jpg');
   z-index: 11;
   font-family: 'Open Sans', sans-serif;
   position: fixed;
@@ -44,7 +46,8 @@
 
     // color: $font-color;
     .stack-area {
-      .title {}
+      .title {
+      }
 
       .text {
         margin-top: 10px;
@@ -58,16 +61,16 @@
     .menu {
       padding-top: 20px;
 
-      >li {
+      > li {
         margin-top: 30px;
 
-        >a {
+        > a {
           display: block;
           padding: 10px 0;
         }
 
         &.active {
-          >a {
+          > a {
             border-right: 8px solid $primary-color;
             color: #333333;
             font-weight: 600;

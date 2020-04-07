@@ -1,16 +1,13 @@
 import React from 'react';
 import SearchBar from '../components/SearchBar';
-import { ProjectListItem } from '../components/Project';
+import { ProjectListItem } from '../components/Projects';
 import { useSelector } from 'react-redux';
-import {
-  selectProjectList,
-  selectSearchList,
-} from 'store/project';
-
+import { selectProjectList } from 'store/project';
 // import styled from 'styled-components';
 
-// const Content = styled.div`
-//   padding: 50px;
+// const ProjectList = styled.ul`
+//   display: flex;
+//   flex-wrap: wrap;
 // `;
 
 // const projectList = [
@@ -28,10 +25,9 @@ import {
 //   },
 // ];
 
-
 const ProjectPage = () => {
   // const projectList = useSelector(selectProjectList);
-  const projectList = useSelector(selectSearchList);
+  const projectList = useSelector(selectProjectList);
 
   return (
     <>
@@ -43,6 +39,7 @@ const ProjectPage = () => {
             <ProjectListItem
               name={item.name}
               date={item.date}
+              url={item.url}
               key={i}
             ></ProjectListItem>
           ))}

@@ -1,0 +1,39 @@
+.project-content {
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    .project-item {
+      display: flex;
+      align-items: flex-end;
+      margin: 50px;
+      width: 495px;
+      &:nth-child(2n) {
+        margin-left: 100px;
+      }
+      // .thumbnail,
+      // .info {
+
+      // }
+      .thumbnail {
+        position: relative;
+        width: 180px;
+        height: 260px;
+        background-color: #fff;
+        // width: 260px;
+        // overflow: hidden;
+        // > img {
+        //   position: relative;
+        //   left: -40px;
+        //   max-width: initial;
+        //   height: 100%;
+        // }
+        box-shadow: 5px 0 5px rgba(0, 0, 0, 0.05);
+      }
+      .info {
+        width: 315px;
+        height: 235px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

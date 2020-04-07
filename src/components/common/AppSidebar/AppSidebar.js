@@ -7,6 +7,8 @@ const AppSidebar = ({ location: { pathname } }) => {
     <div className="app-sidebar">
       <div className="profile">
         <figure>
+          {/* <img src={`${process.env.PUBLIC_URL}${urlPath}`} alt="프로필사진" /> */}
+          {/* <img src={process.env.PUBLIC_URL + '/img/me2.jpg'} alt="프로필사진" /> */}
           <img src={require('assets/img/me2.jpg')} alt="프로필사진" />
           <figcaption>JunCoder</figcaption>
         </figure>

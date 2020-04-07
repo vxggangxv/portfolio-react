@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import './SearchBar.scss';
 import { useDispatch } from 'react-redux';
-import {
-  searchByStack,
-} from 'store/project';
-
+import { searchByStack } from 'store/project';
 
 const SearchBar = () => {
   const [isFocus, setIsFocus] = useState(false);
@@ -15,7 +12,7 @@ const SearchBar = () => {
     if (e.key === 'Enter') {
       dispatch(searchByStack(stack));
     }
-  }
+  };
 
   return (
     <>
@@ -27,7 +24,7 @@ const SearchBar = () => {
             className="form-input search"
             placeholder="Search Stack"
             value={stack}
-            onChange={e => setStack(e.target.value)}
+            onChange={(e) => setStack(e.target.value)}
             onFocus={() => setIsFocus(true)}
             onBlur={() => setIsFocus(false)}
             onKeyPress={onSearch}
