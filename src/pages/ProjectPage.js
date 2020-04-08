@@ -26,7 +26,7 @@ import { selectProjectList } from 'store/project';
 // ];
 
 const ProjectPage = () => {
-  // const projectList = useSelector(selectProjectList);
+  // const projectList = useSelector((state) => state.project.projectList);
   const projectList = useSelector(selectProjectList);
 
   return (
