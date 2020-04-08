@@ -1,2 +1,0 @@
-(this["webpackJsonpportfolio-react"]=this["webpackJsonpportfolio-react"]||[]).push([[3],{44:function(e,t,a){"use strict";a.r(t);var n=a(0),c=a.n(n);t.default=function(){return c.a.createElement("div",{className:"main list-container contents"},c.a.createElement("h1",{className:"page-header"},"About Page"))}}}]);
-//# sourceMappingURL=3.a2d49162.chunk.js.map
