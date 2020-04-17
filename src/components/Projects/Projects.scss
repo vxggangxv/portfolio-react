@@ -3,21 +3,21 @@
     display: flex;
     flex-wrap: wrap;
     .project-item {
+      position: relative;
       display: flex;
       align-items: flex-end;
       margin: 50px;
-      width: 495px;
+      width: 580px;
+      // width: 495px;
       &:nth-child(2n) {
-        margin-left: 100px;
+        margin-left: 50px;
       }
-      // .thumbnail,
-      // .info {
-
-      // }
+      $thumbnail-wd: 230px;
       .thumbnail {
         position: relative;
-        width: 180px;
-        height: 260px;
+        width: $thumbnail-wd;
+        // width: 180px;
+        // height: 260px;
         background-color: #fff;
         // width: 260px;
         // overflow: hidden;
@@ -27,12 +27,12 @@
         //   max-width: initial;
         //   height: 100%;
         // }
-        box-shadow: 5px 0 5px rgba(0, 0, 0, 0.05);
+        box-shadow: 5px 0 15px 5px rgba(0, 0, 0, 0.1);
       }
       .info {
-        width: 315px;
+        width: calc(100% - #{$thumbnail-wd});
         height: 235px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
       }
     }
   }

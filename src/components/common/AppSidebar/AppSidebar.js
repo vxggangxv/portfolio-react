@@ -10,6 +10,7 @@ const AppSidebar = ({ location: { pathname } }) => {
           {/* <img src={`${process.env.PUBLIC_URL}${urlPath}`} alt="프로필사진" /> */}
           {/* <img src={process.env.PUBLIC_URL + '/img/me2.jpg'} alt="프로필사진" /> */}
           <img src={require('assets/img/me2.jpg')} alt="프로필사진" />
+          {/* <img src={require('assets/img/me3.jpg')} alt="프로필사진" /> */}
           <figcaption>JunCoder</figcaption>
         </figure>
       </div>
@@ -39,7 +40,7 @@ const AppSidebar = ({ location: { pathname } }) => {
           </li>
         </ul>
       </nav>
-      <small className="copyright">Made by JunCoder with React</small>
+      <small className="copyright">Made by JunCoder with React, Redux</small>
     </div>
   );
 };
