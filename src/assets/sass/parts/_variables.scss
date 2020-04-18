@@ -7,12 +7,13 @@ $screen-xs-width: 576px;
 $screen-sm-width: 768px;
 $screen-md-width: 992px;
 $screen-lg-pd: 20px;
-$screen-lg-width: 1180px;
+$screen-lg-width: 1160px;
 
 $hd-ht-m: 45px;
 $hd-ht-pc: 80px;
 
-$sidebar-wd: 350px;
+$sidebar-wd: 300px;
+// $sidebar-wd: 0px;
 
 $font-stack: ('Noto Sans KR', sans-serif);
 $font-nnGothic: ('Nanum Gothic', Sans-serif);
@@ -32,12 +33,16 @@ $bor-gray: #c9c9c9;
 $bor-gray2: #bababa;
 
 // $primary-color: #003f7c;
-$primary-color: #7c92fa;
 // $primary-color-dark: #183d62;
 // $primary-color-deepdark: #ff732e;
+// $primary-color: #7c92fa;
+// $primary-color: #bcaaa4;
+// $primary-color: #a1887f;
+$primary-color: #f2c847;
 
 // pc
-$gnb-hover-color: #5ca904;
+// $header-color: #bcaaa4;
+$header-color: #f2c847;
 
 // mobile
 $gnb-title-bg: #00474f;

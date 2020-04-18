@@ -56,7 +56,7 @@ input {
   font-family: $font-stack;
 }
 
-input[type=password] {
+input[type='password'] {
   font-family: sans-serif;
 }
 
@@ -64,7 +64,7 @@ label {
   @include va;
   line-height: 1;
 
-  >* {
+  > * {
     @include va;
   }
 }
@@ -87,7 +87,6 @@ textarea {
   letter-spacing: normal;
 }
 
-
 img.bor {
   border: 1px solid #bbb;
   box-sizing: border-box;
@@ -100,13 +99,13 @@ img.bor {
 }
 
 .cf:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
 
-[class*=wrapper],
-[class*=content],
+[class*='wrapper'],
+[class*='content'],
 .sec {
   position: relative;
 }
@@ -118,7 +117,7 @@ img.bor {
   // overflow: hidden;
 
   &:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -128,7 +127,7 @@ img.bor {
   position: relative;
 
   &:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -138,70 +137,87 @@ img.bor {
   margin-bottom: 0 !important;
 }
 
+.lg-wd,
+.group-f,
+.group {
+  width: $screen-lg-width;
+}
+
+.lg-pd,
+.group {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-textarea,
+.form-input {
+  @include form-base;
+}
+
 // mobile & tablet
 // @media (max-width: 991px) {
-@media (max-width: $screen-md-width - 1px) {
-  .group {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+// @media (max-width: $screen-md-width - 1px) {
+//   .group {
+//     padding-left: 10px;
+//     padding-right: 10px;
+//   }
 
-  .form-textarea,
-  .form-input {
-    @include form-base($ht: 40px);
-  }
-}
+//   .form-textarea,
+//   .form-input {
+//     @include form-base($ht: 40px);
+//   }
+// }
 
 // mobile
-@media (min-width: $screen-xs-width) and (max-width: $screen-sm-width - 1px) {
+// @media (min-width: $screen-xs-width) and (max-width: $screen-sm-width - 1px) {
 
-  .group-f,
-  .group {
-    width: 540px;
-  }
-}
+//   .group-f,
+//   .group {
+//     width: 540px;
+//   }
+// }
 
 // tablet
-@media (min-width: $screen-sm-width) and (max-width: $screen-md-width - 1px) {
+// @media (min-width: $screen-sm-width) and (max-width: $screen-md-width - 1px) {
 
-  .group-f,
-  .group {
-    width: 720px;
-  }
-}
+//   .group-f,
+//   .group {
+//     width: 720px;
+//   }
+// }
 
 // pc
-@media (min-width: $screen-md-width) {
+// @media (min-width: $screen-md-width) {
 
-  .form-textarea,
-  .form-input {
-    @include form-base;
-  }
-}
+//   .form-textarea,
+//   .form-input {
+//     @include form-base;
+//   }
+// }
 
 // pc md
 // @media (min-width: 992px) and (max-width: 999px) {
-@media (min-width: $screen-md-width) and (max-width: $screen-lg-width + $vertical-scroll - 1px) {
+// @media (min-width: $screen-md-width) and (max-width: $screen-lg-width + $vertical-scroll - 1px) {
 
-  .group-f,
-  .group {
-    width: 960px;
-  }
-}
+//   .group-f,
+//   .group {
+//     width: 960px;
+//   }
+// }
 
 // pc lg
-@media (min-width: $screen-lg-width + $vertical-scroll) {
+// @media (min-width: $screen-lg-width + $vertical-scroll) {
 
-  .group-f,
-  .group {
-    width: $screen-lg-width;
-  }
+//   .group-f,
+//   .group {
+//     width: $screen-lg-width;
+//   }
 
-  .group {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
+//   .group {
+//     padding-left: 20px;
+//     padding-right: 20px;
+//   }
+// }
 
 .btn {
   @include btn-base;
@@ -241,7 +257,6 @@ img.bor {
   }
 
   &.no-bd {
-
     &,
     &:hover {
       border-color: transparent;
@@ -269,7 +284,6 @@ img.bor {
     @include btn-size(1px 15px, 12px);
     line-height: 1.5;
   }
-
 }
 
 .btn-block {
@@ -277,12 +291,21 @@ img.bor {
   width: 100%;
 }
 
-a.btn>* {
+a.btn > * {
   @include va;
 }
 
 .ap-reset {
   @include ap-reset;
+}
+
+.bx {
+  box-sizing: border-box;
+}
+
+hr.line {
+  border: 0;
+  border-top: 1px solid #efefef;
 }
 
 .pull-right {
@@ -305,6 +328,7 @@ a.btn>* {
   visibility: hidden;
 }
 
+[hidden],
 .hidden {
   display: none !important;
   visibility: hidden !important;
@@ -332,7 +356,7 @@ a.btn>* {
 }
 
 .ff-nnGothic {
-  font-family: ("Nanum Gothic", Dotum, Sans-serif) !important;
+  font-family: ('Nanum Gothic', Dotum, Sans-serif) !important;
 }
 
 .ff-nnSquareR {
@@ -340,7 +364,7 @@ a.btn>* {
 }
 
 .ff-ntss {
-  font-family: ("Noto Sans KR", Dotum, Sans-serif) !important;
+  font-family: ('Noto Sans KR', Dotum, Sans-serif) !important;
 }
 
 .ff-jfss {
@@ -512,9 +536,9 @@ a.btn>* {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: table;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .modal-mask {
@@ -524,9 +548,9 @@ a.btn>* {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: table;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 
   &.popup,
   &.scale-no {
@@ -553,7 +577,7 @@ a.btn>* {
   position: relative;
   margin: 0 auto;
   transform: scale(1.1);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .pop-header,
@@ -636,7 +660,7 @@ a.btn>* {
     bottom: 0;
     left: 50%;
     display: block !important;
-    width: .5px !important;
+    width: 0.5px !important;
     height: 100% !important;
     padding: 0 !important;
     opacity: 0 !important;
@@ -656,7 +680,7 @@ a.btn>* {
 
     &:after {
       position: absolute;
-      font-family: "Material Design Icons";
+      font-family: 'Material Design Icons';
       content: '\F140';
       font-size: 20px;
       top: 50%;
@@ -674,7 +698,7 @@ a.btn>* {
     width: 100%;
     padding: 10px 0;
     background-color: #fff;
-    box-shadow: 0 0 50px 0 rgba(82, 63, 105, .18);
+    box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.18);
     border-radius: 3px;
 
     .item {
@@ -685,7 +709,7 @@ a.btn>* {
 
       &:hover,
       &.active {
-        background-color: #F7F8FA;
+        background-color: #f7f8fa;
       }
     }
 
@@ -699,12 +723,12 @@ a.btn>* {
 .fileform-wrapper {
   position: relative;
 
-  input[type=file] {
+  input[type='file'] {
     position: absolute !important;
     bottom: 0;
     left: 50%;
     display: block !important;
-    width: .5px !important;
+    width: 0.5px !important;
     height: 100% !important;
     padding: 0 !important;
     opacity: 0 !important;
@@ -712,7 +736,7 @@ a.btn>* {
     z-index: 0 !important;
   }
 
-  >* {
+  > * {
     vertical-align: middle;
   }
 
@@ -728,7 +752,7 @@ a.btn>* {
 
     &:after {
       position: absolute;
-      font-family: "Material Design Icons";
+      font-family: 'Material Design Icons';
       content: '\FA4D';
       font-size: 20px;
       top: 50%;
@@ -746,7 +770,6 @@ a.btn>* {
   }
 
   &.pd-md {
-
     label {
       padding: 9px 15px;
       min-width: 125px;
@@ -764,7 +787,6 @@ a.btn>* {
 
 // 에러 페이지
 #errorPage {
-
   .header,
   .footer {
     display: none;
@@ -786,7 +808,7 @@ a.btn>* {
     box-sizing: border-box;
     border-radius: 20px;
     background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   }
 
   .title {

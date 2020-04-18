@@ -5,38 +5,49 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 80px;
-  padding-left: 100px;
-  background-color: #fff;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+  margin-right: 155px;
+  // margin-left: 150px;
+  // margin-left: 150px;
+  // padding-left: 100px;
+  // background-color: #fff;
+  // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.045);
 
   .input-cover {
+    position: relative;
+    top: -2px;
     display: flex;
     align-items: center;
     width: 270px;
-    padding-bottom: 5px;
+    // padding-bottom: 5px;
     border-bottom: 2px solid #eee;
     color: #ddd;
 
     .mdi-magnify {
       position: relative;
-      top: 2px;
-      font-size: 34px;
-      // cursor: pointer;
+      top: 1px;
+      font-size: 22px;
+      // color: $font-color;
+      color: #ffffff;
+      cursor: pointer;
 
-      &.active {
-        color: $font-color;
-      }
+      // &.active {
+      //   color: $font-color;
+      // }
     }
 
     .form-input.search {
-      font-size: 22px;
       border: 0;
       box-shadow: none;
       outline: none;
+      height: auto;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      background-color: transparent;
+      font-size: 16px;
+      color: #ffffff;
 
       &::placeholder {
-        color: #dddddd;
+        color: #efefef;
       }
     }
   }

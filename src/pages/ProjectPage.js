@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from '../components/SearchBar';
+// import SearchBar from '../components/SearchBar';
 import { ProjectListItem } from '../components/Projects';
 import { useSelector } from 'react-redux';
 import { selectProjectList } from 'store/project';
@@ -31,15 +31,18 @@ const ProjectPage = () => {
 
   return (
     <>
-      <SearchBar></SearchBar>
+      {/* <SearchBar></SearchBar> */}
       {/* <Content>컨텐츠</Content> */}
       <div className="page-content project-content">
         <ul className="project-list">
           {projectList.map((item, i) => (
             <ProjectListItem
               name={item.name}
-              date={item.date}
+              description={item.description}
+              stack={item.stack}
+              path={item.path}
               url={item.url}
+              demo={item.demo}
               key={i}
             ></ProjectListItem>
           ))}

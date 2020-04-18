@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './AppHeader.scss';
+import SearchBar from '../../SearchBar';
 
 const AppHeader = ({ location: { pathname } }) => {
   let pageHeader = '';
@@ -15,6 +16,7 @@ const AppHeader = ({ location: { pathname } }) => {
     <>
       <header className="app-header">
         <h2 className="page-header">{pageHeader}</h2>
+        <SearchBar></SearchBar>
       </header>
     </>
   );

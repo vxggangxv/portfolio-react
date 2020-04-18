@@ -7,6 +7,8 @@
 body {
   font-family: $font-stack;
   color: $font-color;
+  // background-color: #fafcff;
+  background-color: #f1f1f1;
 }
 
 main#main {
@@ -15,10 +17,14 @@ main#main {
   left: $sidebar-wd;
 }
 
-.page-content {
-  padding: 50px;
+.app {
+  min-width: 1500px;
 }
 
+.page-content {
+  padding: 20px;
+  // padding: 40px;
+}
 // .App {
 //   text-align: center;
 // }

@@ -2,32 +2,85 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const projectListData = [
   {
-    name: 'Conacoin1',
-    date: '2020.03.25',
-    stack: 'html5, css3, javascript',
-    // url: '/img/portfolio/port_0.jpg',
-    url: '/img/portfolio2/9.jpg',
+    id: 1,
+    name: 'Ocean2you',
+    description: '오션투유 반응형 사이트 제작, Full Video Bg',
+    stack: 'Html5, Css3, Javascript',
+    path: '/img/portfolio/port_1.jpg',
+    url: 'http://ocean2you.co.kr/',
+    demo: 'http://ocean2you.co.kr/',
   },
   {
-    name: 'Conacoin2',
-    date: '2020.03.26',
-    stack: 'html5, css3, javascript, react',
-    // url: '/img/portfolio/port_1.jpg',
-    url: '/img/portfolio2/10.jpg',
+    id: 2,
+    name: 'Nurihelp',
+    description: '누리헬프 반응형 사이트 제작',
+    stack: 'Html5, Css3, Javascript',
+    path: '/img/portfolio/port_2.jpg',
+    url: '',
+    demo: '',
   },
   {
-    name: 'Conacoin3',
-    date: '2020.03.27',
-    stack: 'html5, css3, javascript, vue',
-    // url: '/img/portfolio/port_2.jpg',
-    url: '/img/portfolio2/11.jpg',
+    id: 3,
+    name: 'Nurifunding',
+    description: '',
+    stack: 'Html5, Css3, Javascript',
+    path: '/img/portfolio/port_3.jpg',
+    url: '',
+    demo: '',
   },
   {
-    name: 'Conacoin4',
-    date: '2020.03.28',
-    stack: 'html5, css3, javascript, express',
-    // url: '/img/portfolio/port_3.jpg',
-    url: '/img/portfolio2/14.jpg',
+    id: 4,
+    name: 'Goco',
+    description: '',
+    stack: 'Html5, Css3, Scss, Javascript',
+    path: '/img/portfolio/port_4.jpg',
+    url: '',
+    demo: '',
+  },
+  {
+    id: 5,
+    name: 'Gocomanage',
+    description: '',
+    stack: 'Html5, Css3, Javascript',
+    path: '/img/portfolio/port_5.jpg',
+    url: '',
+    demo: '',
+  },
+  {
+    id: 6,
+    name: 'Vue-todo',
+    description: '',
+    stack: 'Html5, Css3, Javascript, Vue',
+    path: '/img/portfolio/port_6.jpg',
+    url: '',
+    demo: '',
+  },
+  {
+    id: 7,
+    name: 'Sunblockterminal',
+    description: '',
+    stack: 'Html5, Css3, Javascript',
+    path: '/img/portfolio/port_7.jpg',
+    url: '',
+    demo: '',
+  },
+  {
+    id: 8,
+    name: 'Lanbizberry',
+    description: '',
+    stack: 'Html5, Css3, Javascript',
+    path: '/img/portfolio/port_8.jpg',
+    url: '',
+    demo: '',
+  },
+  {
+    id: 9,
+    name: 'Conacoin',
+    description: '',
+    stack: 'Html5, Css3, Javascript, Node.js, Express',
+    path: '/img/portfolio/port_9.jpg',
+    url: '',
+    demo: '',
   },
 ];
 
@@ -62,8 +115,8 @@ export const slice = createSlice({
       const set = Array.from(new Set(searchList));
       // console.log(set);
       set.sort(function (a, b) {
-        // return a.date - b.date;
-        return b.date < a.date ? -1 : b.date > a.date ? 1 : 0;
+        // return a.id - b.id;
+        return b.id < a.id ? -1 : b.id > a.id ? 1 : 0;
       });
 
       state.projectList = set;
@@ -80,7 +133,7 @@ export const { searchByStack } = slice.actions;
 export const selectProjectList = (state) => {
   const setArray = Array.from(state.project.projectList);
   setArray.sort(function (a, b) {
-    return b.date < a.date ? -1 : b.date > a.date ? 1 : 0;
+    return b.id < a.id ? -1 : b.id > a.id ? 1 : 0;
   });
   return setArray;
   // return state.project.projectList;
