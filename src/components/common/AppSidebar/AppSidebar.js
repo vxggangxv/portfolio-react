@@ -37,8 +37,8 @@ const AppSidebar = ({ location: { pathname } }) => {
             <Link to="/">Project</Link>
           </li>
           <li className={pathname === '/activity' ? 'active' : ''}>
-            {/* <Link to="/activity">Activity</Link> */}
-            <Link to="/activity">Activities</Link>
+            <Link to="/activity">Activity</Link>
+            {/* <Link to="/activity">Activities</Link> */}
           </li>
         </ul>
       </nav>

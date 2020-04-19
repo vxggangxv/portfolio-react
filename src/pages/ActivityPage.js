@@ -22,12 +22,12 @@ const ActivityPage = () => {
               <p>2019.12. &nbsp; Sumblockterminal 반응형사이트 제작 - 프론트</p>
               <p>2019.12. &nbsp; Bizberry 반응형사이트 제작 - 프론트</p>
               <p>
-                2020.03 ~ . &nbsp; Conacoin 반응형사이트 제작, 유지관리 -
-                프론트, 백엔드(Node.js Express) 개발
+                2020.03 ~. &nbsp; Conacoin 반응형사이트 제작, 유지관리 - 프론트,
+                백엔드(Node.js Express) 개발
               </p>
               <p>
-                2020.03 ~ . &nbsp; Conacoin 관리자사이트 제작, 유지관리 -
-                프론트, 백엔드(Node.js Express) 개발
+                2020.03 ~. &nbsp; Conacoin 관리자사이트 제작, 유지관리 - 프론트,
+                백엔드(Node.js Express) 개발
               </p>
             </div>
           </div>
