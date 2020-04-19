@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a514c2d12a2604306542c44324e8258b",
+    "revision": "b942bebf29958a12b260baf79bf07a3f",
     "url": "/portfolio-react/index.html"
   },
   {
@@ -12,20 +12,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-react/static/css/4.2c856de3.chunk.css"
   },
   {
-    "revision": "5b60d0bd2a9a459f2dec",
+    "revision": "73b02d736504595da1cb",
     "url": "/portfolio-react/static/css/5.d40ed4de.chunk.css"
   },
   {
-    "revision": "b773043fc973fae01520",
+    "revision": "9c778c71ab11d952f41f",
     "url": "/portfolio-react/static/css/main.8ff160d2.chunk.css"
   },
   {
-    "revision": "80bc92da5612421087fb",
-    "url": "/portfolio-react/static/js/2.12f2abca.chunk.js"
+    "revision": "067cf5f9a2fdee5deaef",
+    "url": "/portfolio-react/static/js/2.ce79ea95.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/portfolio-react/static/js/2.12f2abca.chunk.js.LICENSE.txt"
+    "url": "/portfolio-react/static/js/2.ce79ea95.chunk.js.LICENSE.txt"
   },
   {
     "revision": "214f5e04b7421f33688a",
@@ -36,16 +36,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-react/static/js/4.5dde32ab.chunk.js"
   },
   {
-    "revision": "5b60d0bd2a9a459f2dec",
-    "url": "/portfolio-react/static/js/5.2351252b.chunk.js"
+    "revision": "73b02d736504595da1cb",
+    "url": "/portfolio-react/static/js/5.84f51367.chunk.js"
   },
   {
-    "revision": "b773043fc973fae01520",
-    "url": "/portfolio-react/static/js/main.fad57e61.chunk.js"
+    "revision": "9c778c71ab11d952f41f",
+    "url": "/portfolio-react/static/js/main.989a8d1e.chunk.js"
   },
   {
-    "revision": "4c2a7a91bf36f64cab87",
-    "url": "/portfolio-react/static/js/runtime-main.c87ac33d.js"
+    "revision": "d4be6e6a85c150b647b9",
+    "url": "/portfolio-react/static/js/runtime-main.9cdd7c92.js"
   },
   {
     "revision": "0961c58cc3d39491087853f7cfb259a2",
