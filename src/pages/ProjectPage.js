@@ -10,21 +10,6 @@ import { selectProjectList } from 'store/project';
 //   flex-wrap: wrap;
 // `;
 
-// const projectList = [
-//   {
-//     name: 'Conacoin',
-//     date: '2020.03.25',
-//   },
-//   {
-//     name: 'Conacoin2',
-//     date: '2020.03.25',
-//   },
-//   {
-//     name: 'Conacoin3',
-//     date: '2020.03.25',
-//   },
-// ];
-
 const ProjectPage = () => {
   // const projectList = useSelector((state) => state.project.projectList);
   const projectList = useSelector(selectProjectList);

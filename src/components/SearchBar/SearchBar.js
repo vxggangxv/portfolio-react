@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './SearchBar.scss';
 import { useDispatch } from 'react-redux';
 import { searchByStack } from 'store/project';
@@ -7,6 +7,10 @@ const SearchBar = () => {
   const [isFocus, setIsFocus] = useState(false);
   const [stack, setStack] = useState('');
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(searchByStack(''));
+  }, [dispatch]);
 
   const onSearch = () => {
     dispatch(searchByStack(stack));
