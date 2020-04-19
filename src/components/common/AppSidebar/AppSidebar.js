@@ -21,7 +21,8 @@ const AppSidebar = ({ location: { pathname } }) => {
           <p className="text">
             <span className="item">Html5</span>,&nbsp;
             <span className="item">Css3</span>,&nbsp;
-            <span className="item">Javascript</span>,<br />
+            <span className="item">Scss</span>,<br />
+            <span className="item">Javascript</span>,&nbsp;
             <span className="item">React</span>,&nbsp;
             <span className="item">Vue</span>,<br />
             <span className="item">Node.js</span>,&nbsp;
