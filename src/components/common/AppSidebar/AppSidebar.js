@@ -24,6 +24,7 @@ const AppSidebar = ({ location: { pathname } }) => {
             <span className="item">Javascript</span>,<br />
             <span className="item">React</span>,&nbsp;
             <span className="item">Vue</span>,<br />
+            <span className="item">Node.js</span>,&nbsp;
             <span className="item">Express</span>
           </p>
         </div>
@@ -32,11 +33,12 @@ const AppSidebar = ({ location: { pathname } }) => {
           <li className={pathname === '/about' ? 'active' : ''}>
             <Link to="/about">About</Link>
           </li>
-          <li className={pathname === '/' ? 'active' : ''}>
+          <li className={pathname === '/project' ? 'active' : ''}>
             <Link to="/">Project</Link>
           </li>
           <li className={pathname === '/activity' ? 'active' : ''}>
-            <Link to="/activity">Activity</Link>
+            {/* <Link to="/activity">Activity</Link> */}
+            <Link to="/activity">Activities</Link>
           </li>
         </ul>
       </nav>

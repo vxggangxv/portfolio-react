@@ -8,9 +8,13 @@ const SearchBar = () => {
   const [stack, setStack] = useState('');
   const dispatch = useDispatch();
 
-  const onSearch = (e) => {
+  const onSearch = () => {
+    dispatch(searchByStack(stack));
+  };
+
+  const onEnter = (e) => {
     if (e.key === 'Enter') {
-      dispatch(searchByStack(stack));
+      onSearch();
     }
   };
 
@@ -18,7 +22,10 @@ const SearchBar = () => {
     <>
       <div className="search-bar">
         <div className="input-cover">
-          <i className={`mdi mdi-magnify ${isFocus ? 'active' : ''}`}></i>
+          <i
+            className={`mdi mdi-magnify ${isFocus ? 'active' : ''}`}
+            onClick={onSearch}
+          ></i>
           <input
             type="text"
             className="form-input search"
@@ -27,7 +34,7 @@ const SearchBar = () => {
             onChange={(e) => setStack(e.target.value)}
             onFocus={() => setIsFocus(true)}
             onBlur={() => setIsFocus(false)}
-            onKeyPress={onSearch}
+            onKeyPress={onEnter}
           />
         </div>
       </div>

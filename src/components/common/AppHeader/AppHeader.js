@@ -5,7 +5,7 @@ import SearchBar from '../../SearchBar';
 
 const AppHeader = ({ location: { pathname } }) => {
   let pageHeader = '';
-  if (pathname === '/') {
+  if (pathname === '/project') {
     pageHeader = 'Project';
   } else if (pathname === '/about') {
     pageHeader = 'About';
@@ -15,8 +15,10 @@ const AppHeader = ({ location: { pathname } }) => {
   return (
     <>
       <header className="app-header">
-        <h2 className="page-header">{pageHeader}</h2>
-        <SearchBar></SearchBar>
+        <div className="lg-wd lg-pd app-header-area">
+          <h2 className="page-header">{pageHeader}</h2>
+          {pathname === '/project' && <SearchBar></SearchBar>}
+        </div>
       </header>
     </>
   );

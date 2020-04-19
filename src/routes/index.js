@@ -11,7 +11,8 @@ const ActivityPage = loadable(() => import('../pages/ActivityPage'));
 export default () => (
   <>
     <Switch>
-      <Route path="/" exact component={ProjectPage} />
+      <Redirect path="/" exact to="/project" />
+      <Route path="/project" exact component={ProjectPage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/activity" component={ActivityPage} />
       <Redirect from="*" to="/" />

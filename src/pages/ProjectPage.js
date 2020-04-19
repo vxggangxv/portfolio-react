@@ -33,8 +33,9 @@ const ProjectPage = () => {
     <>
       {/* <SearchBar></SearchBar> */}
       {/* <Content>컨텐츠</Content> */}
-      <div className="page-content project-content">
-        <ul className="project-list">
+      <section className="page-content project-content">
+        <h2 className="sr-only">프로젝트 리스트</h2>
+        <ul className="project-list row">
           {projectList.map((item, i) => (
             <ProjectListItem
               name={item.name}
@@ -43,11 +44,12 @@ const ProjectPage = () => {
               path={item.path}
               url={item.url}
               demo={item.demo}
+              contrib={item.contrib}
               key={i}
             ></ProjectListItem>
           ))}
         </ul>
-      </div>
+      </section>
     </>
   );
 };

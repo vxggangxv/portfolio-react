@@ -7,7 +7,15 @@ import './ProjectListItem.scss';
 //   margin: 25px;
 // `;
 
-const ProjectItem = ({ name, description, stack, path, url, demo }) => {
+const ProjectItem = ({
+  name,
+  description,
+  stack,
+  path,
+  url,
+  demo,
+  contrib,
+}) => {
   return (
     <li className="project-item">
       <div className="in-cover">
@@ -23,23 +31,34 @@ const ProjectItem = ({ name, description, stack, path, url, demo }) => {
         </div>
       </div>
       <div className="link-area">
-        <a
-          className="link-item"
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="mdi mdi-vector-link"></i> Link
-        </a>
-        <a
-          className="link-item"
-          hidden={!demo ? 'hidden' : ''}
-          href={demo}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="mdi mdi-vector-link"></i> Demo
-        </a>
+        {/* mdi-pencil-circle-outline */}
+        {/* mdi-vector-link */}
+        {/* mdi-open-in-new */}
+        {/* mdi-pencil-box-outline */}
+        {url && (
+          <a
+            className="link-item"
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="mdi mdi-open-in-new"></i> Link
+          </a>
+        )}
+        {demo && (
+          <a
+            className="link-item"
+            hidden={!demo ? 'hidden' : ''}
+            href={demo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="mdi mdi-vector-link"></i> Demo
+          </a>
+        )}
+        <span className="contrib">
+          <i className="mdi mdi-lead-pencil"></i> {contrib}
+        </span>
       </div>
     </li>
   );

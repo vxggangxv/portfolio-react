@@ -137,16 +137,31 @@ img.bor {
   margin-bottom: 0 !important;
 }
 
-.lg-wd,
 .group-f,
 .group {
   width: $screen-lg-width;
 }
 
-.lg-pd,
 .group {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $screen-lg-pd;
+  padding-right: $screen-lg-pd;
+}
+.row {
+  margin-left: -$screen-lg-pd;
+  margin-right: -$screen-lg-pd;
+}
+.col {
+  padding-left: $screen-lg-pd;
+  padding-right: $screen-lg-pd;
+}
+.lg-wd {
+  width: $screen-lg-width !important;
+  box-sizing: border-box;
+}
+
+.lg-pd {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 .form-textarea,
@@ -299,8 +314,11 @@ a.btn > * {
   @include ap-reset;
 }
 
-.bx {
-  box-sizing: border-box;
+.bx-b {
+  box-sizing: border-box !important;
+}
+.bx-i {
+  box-sizing: initial !important;
 }
 
 hr.line {
@@ -371,12 +389,31 @@ hr.line {
   font-family: $font-jfss !important;
 }
 
+b,
+strong,
 .fw-b {
   font-weight: 700 !important;
 }
 
+.fw-m {
+  font-weight: 500 !important;
+}
+
 .fw-n {
   font-weight: 400 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
 }
 
 .ta-center {

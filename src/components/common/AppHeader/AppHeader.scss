@@ -2,7 +2,7 @@
 
 .app-header {
   $ml: $sidebar-wd;
-  z-index: 12;
+  // z-index: 12;
   position: relative;
   display: flex;
   align-items: center;
@@ -10,14 +10,15 @@
   height: 60px;
   width: calc(100% - #{$sidebar-wd});
   left: $ml;
-  padding-left: 40px;
-  // padding-left: 20px;
+  // padding-left: 40px;
+  padding-left: 20px;
   // padding-left: $pl;
   background-color: $header-color;
   box-sizing: border-box;
   // font-size: 25px;
   font-size: 20px;
   color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.045);
   .app-header-area {
     display: flex;
     justify-content: space-between;
