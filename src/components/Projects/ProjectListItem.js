@@ -21,7 +21,8 @@ const ProjectItem = ({
       <div className="in-cover">
         <figure className="thumbnail">
           {/* <img src={`${props.url}`} alt="프로필사진" /> */}
-          <img src={`${process.env.PUBLIC_URL}${path}`} alt="프로필사진" />
+          {/* <img src={`${process.env.PUBLIC_URL}${path}`} alt="프로필사진" /> */}
+          <img src={require('../../assets' + path)} alt="프로필사진" />
         </figure>
         <div className="info">
           <p className="name">{name}</p>
