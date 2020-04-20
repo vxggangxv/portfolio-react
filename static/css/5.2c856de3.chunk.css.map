@@ -1,0 +1,1 @@
+{"version":3,"sources":["AboutPage.scss"],"names":[],"mappings":"AAEA,2BAEI,YAAa","file":"5.2c856de3.chunk.css","sourcesContent":["@import '../assets/sass/parts/variables';\r\n\r\n.about-content {\r\n  .about-card {\r\n    width: 1150px;\r\n  }\r\n}\r\n"]}
