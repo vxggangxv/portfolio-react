@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9edbf25a95dc09929e8b151fff600b6c",
+    "revision": "e6658074ba7c8d14a44520f510da558e",
     "url": "/portfolio-react/index.html"
   },
   {
@@ -12,20 +12,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-react/static/css/4.2c856de3.chunk.css"
   },
   {
-    "revision": "73b02d736504595da1cb",
+    "revision": "0ae5bb29dc2097a5cfcb",
     "url": "/portfolio-react/static/css/5.d40ed4de.chunk.css"
   },
   {
-    "revision": "ced211ff8bd2972fe5a2",
-    "url": "/portfolio-react/static/css/main.8ff160d2.chunk.css"
+    "revision": "0e7e9d986b655c782e65",
+    "url": "/portfolio-react/static/css/main.d6e090da.chunk.css"
   },
   {
-    "revision": "067cf5f9a2fdee5deaef",
-    "url": "/portfolio-react/static/js/2.ce79ea95.chunk.js"
+    "revision": "80bc92da5612421087fb",
+    "url": "/portfolio-react/static/js/2.12f2abca.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/portfolio-react/static/js/2.ce79ea95.chunk.js.LICENSE.txt"
+    "url": "/portfolio-react/static/js/2.12f2abca.chunk.js.LICENSE.txt"
   },
   {
     "revision": "214f5e04b7421f33688a",
@@ -36,16 +36,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-react/static/js/4.115395f2.chunk.js"
   },
   {
-    "revision": "73b02d736504595da1cb",
-    "url": "/portfolio-react/static/js/5.84f51367.chunk.js"
+    "revision": "0ae5bb29dc2097a5cfcb",
+    "url": "/portfolio-react/static/js/5.d7493e1b.chunk.js"
   },
   {
-    "revision": "ced211ff8bd2972fe5a2",
-    "url": "/portfolio-react/static/js/main.26fd7553.chunk.js"
+    "revision": "0e7e9d986b655c782e65",
+    "url": "/portfolio-react/static/js/main.a45c80ea.chunk.js"
   },
   {
-    "revision": "90abd8a513906365868c",
-    "url": "/portfolio-react/static/js/runtime-main.cc4d5c9f.js"
+    "revision": "a3fcc962a1e9ad8dc891",
+    "url": "/portfolio-react/static/js/runtime-main.ab85fb54.js"
   },
   {
     "revision": "0961c58cc3d39491087853f7cfb259a2",
