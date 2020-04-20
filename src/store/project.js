@@ -107,8 +107,8 @@ const projectListData = [
 export const slice = createSlice({
   name: 'project',
   initialState: {
-    projectList: projectListData,
     searchList: projectListData,
+    projectList: [],
   },
   reducers: {
     increment: (state) => {
@@ -116,6 +116,14 @@ export const slice = createSlice({
     },
     decrement: (state) => {
       state.value -= 1;
+    },
+    setProjectList: (state, action) => {
+      // state.projectList = action.payload;
+      const setArray = Array.from(action.payload);
+      setArray.sort(function (a, b) {
+        return b.id < a.id ? -1 : b.id > a.id ? 1 : 0;
+      });
+      state.projectList = setArray;
     },
     searchByStack: (state, action) => {
       let word = action.payload.toLowerCase();
@@ -151,16 +159,10 @@ export const slice = createSlice({
   },
 });
 
-export const { searchByStack } = slice.actions;
+export const { setProjectList, searchByStack } = slice.actions;
 
-export const selectProjectList = (state) => {
-  const setArray = Array.from(state.project.projectList);
-  setArray.sort(function (a, b) {
-    return b.id < a.id ? -1 : b.id > a.id ? 1 : 0;
-  });
-  return setArray;
-  // return state.project.projectList;
+export const getProjectList = () => dispatch => {
+  dispatch(setProjectList(projectListData));
 };
-export const selectSearchList = (state) => state.project.searchList;
 
 export default slice.reducer;

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import SearchBar from '../components/SearchBar';
 import { ProjectListItem } from '../components/Projects';
-import { useSelector } from 'react-redux';
-import { selectProjectList } from 'store/project';
+import { useSelector, useDispatch } from 'react-redux';
+import { getProjectList } from 'store/project';
 // import styled from 'styled-components';
 
 // const ProjectList = styled.ul`
@@ -11,8 +11,13 @@ import { selectProjectList } from 'store/project';
 // `;
 
 const ProjectPage = () => {
-  // const projectList = useSelector((state) => state.project.projectList);
-  const projectList = useSelector(selectProjectList);
+  const projectList = useSelector((state) => state.project.projectList);
+
+  // let projectList = [];
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getProjectList());
+  }, [dispatch]);
 
   return (
     <>
