@@ -9,7 +9,7 @@ import './App.scss';
 function App() {
   return (
     <div className="app">
-      <h1 className="app-name sr-only">JunCoder의 리액트로 만든 포트폴리오</h1>
+      <h1 className="app-name hide">JunCoder의 리액트로 만든 포트폴리오</h1>
       <AppHeader></AppHeader>
       <AppSidebar></AppSidebar>
       <main className="app-contents" id="main">
