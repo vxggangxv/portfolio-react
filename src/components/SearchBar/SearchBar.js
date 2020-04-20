@@ -8,9 +8,9 @@ const SearchBar = () => {
   const [stack, setStack] = useState('');
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(searchByStack(''));
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(searchByStack(''));
+  // }, [dispatch]);
 
   const onSearch = () => {
     dispatch(searchByStack(stack));
