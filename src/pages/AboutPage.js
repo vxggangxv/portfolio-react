@@ -2,6 +2,17 @@ import React from 'react';
 import './AboutPage.scss';
 
 const AboutPage = () => {
+
+  var today = new Date();
+  var dateString = "2015-01-16";
+
+  var dateArray = dateString.split("-");
+
+  var dateObj = new Date(dateArray[0], Number(dateArray[1]) - 1, dateArray[2]);
+
+  var betweenDay = (today.getTime() - dateObj.getTime()) / 1000 / 60 / 60 / 24;
+  var careerYear = Math.ceil(betweenDay / 365);
+
   return (
     <section className="page-content about-content">
       <div className="row">
@@ -17,7 +28,7 @@ const AboutPage = () => {
               <p>
                 고등학교는 이공 계열을 대학교는 예체능 계열을 졸업하였고
                 <br />
-                현재는 Web 개발을 하고 있습니다.
+                현재는 {careerYear}년 차 Web 개발을 하고 있습니다.
                 <br />
                 <br />
                 코딩을 통해서 UI를 제작하고 그 안에 로직을 만들어 내어 서로
