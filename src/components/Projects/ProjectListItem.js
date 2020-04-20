@@ -49,7 +49,6 @@ const ProjectItem = ({
         {demo && (
           <a
             className="link-item"
-            hidden={!demo ? 'hidden' : ''}
             href={demo}
             target="_blank"
             rel="noopener noreferrer"
