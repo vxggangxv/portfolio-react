@@ -5,13 +5,12 @@ import SearchBar from '../../SearchBar';
 
 const AppHeader = ({ location: { pathname } }) => {
   let pageHeader = '';
-  if (pathname === '/project') {
-    pageHeader = 'Project';
-  } else if (pathname === '/about') {
-    pageHeader = 'About';
-  } else if (pathname === '/activity') {
-    pageHeader = 'Activity';
-  }
+  const capitalize = (s) => {
+    if (typeof s !== 'string') return;
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  };
+  pageHeader = capitalize(pathname.slice(1));
+
   return (
     <>
       <header className="app-header">
