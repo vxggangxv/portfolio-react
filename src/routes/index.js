@@ -7,6 +7,7 @@ import loadable from '@loadable/component';
 const ProjectPage = loadable(() => import('../pages/ProjectPage'));
 const AboutPage = loadable(() => import('../pages/AboutPage'));
 const ActivityPage = loadable(() => import('../pages/ActivityPage'));
+const PlanPage = loadable(() => import('../pages/PlanPage'));
 
 export default () => (
   <>
@@ -15,6 +16,7 @@ export default () => (
       <Route path="/project" exact component={ProjectPage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/activity" component={ActivityPage} />
+      <Route path="/plan" component={PlanPage} />
       <Redirect from="*" to="/" />
     </Switch>
   </>
