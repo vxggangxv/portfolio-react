@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e92e351d51be2ee213b77165801037b0",
+    "revision": "8f06195ce80b01c6e10eb52ea8d12231",
     "url": "/portfolio-react/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-react/static/css/2.34ca2c66.chunk.css"
   },
   {
-    "revision": "ec17ff2ef086355e8783",
-    "url": "/portfolio-react/static/css/3.5c549ec3.chunk.css"
+    "revision": "d2099f094079f6786e8d",
+    "url": "/portfolio-react/static/css/3.357c180e.chunk.css"
   },
   {
     "revision": "343785babaf090c8cfbd",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-react/static/css/6.adeeeecf.chunk.css"
   },
   {
-    "revision": "29935a908c7062fefab2",
-    "url": "/portfolio-react/static/css/main.d6e090da.chunk.css"
+    "revision": "b4d58c54ed7c9408d3c6",
+    "url": "/portfolio-react/static/css/main.8ff160d2.chunk.css"
   },
   {
     "revision": "fa0dfcd67e7785e42625",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-react/static/js/2.24aa6c34.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ec17ff2ef086355e8783",
+    "revision": "d2099f094079f6786e8d",
     "url": "/portfolio-react/static/js/3.885ed879.chunk.js"
   },
   {
@@ -52,12 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-react/static/js/6.2a02e468.chunk.js"
   },
   {
-    "revision": "29935a908c7062fefab2",
-    "url": "/portfolio-react/static/js/main.1c603349.chunk.js"
+    "revision": "b4d58c54ed7c9408d3c6",
+    "url": "/portfolio-react/static/js/main.6231d1f8.chunk.js"
   },
   {
-    "revision": "d4443fb463d5278fdf9a",
-    "url": "/portfolio-react/static/js/runtime-main.a7541fc9.js"
+    "revision": "cf71e595cf0f3c462aff",
+    "url": "/portfolio-react/static/js/runtime-main.08d706b0.js"
   },
   {
     "revision": "0961c58cc3d39491087853f7cfb259a2",
