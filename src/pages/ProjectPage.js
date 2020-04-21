@@ -4,6 +4,7 @@ import { ProjectListItem } from '../components/Projects';
 import { useSelector, useDispatch } from 'react-redux';
 import { getProjectList } from 'store/project';
 // import styled from 'styled-components';
+// import Spinner from '../components/common/Spinner';
 
 // const ProjectList = styled.ul`
 //   display: flex;
@@ -23,6 +24,7 @@ const ProjectPage = () => {
     <>
       {/* <SearchBar></SearchBar> */}
       {/* <Content>컨텐츠</Content> */}
+      {/* <Spinner /> */}
       <section className="page-content project-content">
         <h2 className="sr-only">프로젝트 리스트</h2>
         <ul className="project-list row">
