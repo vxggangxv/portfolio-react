@@ -17,10 +17,16 @@ const ActivityPage = () => {
             </div>
             <div className="body">
               <h3>최근 활동 리스트</h3>
-              <p>2019.08. &nbsp; Vue-todo 간단 앱 제작 - Vue</p>
-              <p>2019.10. &nbsp; Front-end-maker 블로그 제작 - Vue, Firebase</p>
-              <p>2019.12. &nbsp; Sumblockterminal 반응형사이트 제작 - 프론트</p>
-              <p>2019.12. &nbsp; Bizberry 반응형사이트 제작 - 프론트</p>
+              <p>
+                2019.08. &nbsp; Vue-todo 간단 앱 제작 - Vue, LocalStroage 개발
+              </p>
+              <p>
+                2019.10. &nbsp; Front-end-maker 블로그 제작 - Vue, Firebase 개발
+              </p>
+              <p>
+                2019.12. &nbsp; Sumblockterminal 반응형사이트 제작 - 프론트 개발
+              </p>
+              <p>2019.12. &nbsp; Bizberry 반응형사이트 제작 - 프론트 개발</p>
               <p>
                 2020.03 ~. &nbsp; Conacoin 반응형사이트 제작, 유지관리 - 프론트,
                 백엔드(Node.js Express) 개발
