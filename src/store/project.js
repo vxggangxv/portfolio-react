@@ -161,8 +161,32 @@ export const slice = createSlice({
 
 export const { setProjectList, searchByStack } = slice.actions;
 
-export const getProjectList = () => dispatch => {
+export const getProjectList = () => (dispatch) => {
   dispatch(setProjectList(projectListData));
 };
+
+// const userSlice = createSlice({
+//   name: ...,
+//   initialState: ...,
+//   reducers: {
+//       // Some simple (sync) actions
+//       fetchUserStart: (state) => { ... },
+//       fetchUserFinish: (state, { payload: user }) => { .... },
+//       fetchUserError: (state) => { .... },
+//   }
+// })
+// const { fetchUserStart, fetchUserFinish, fetchUserError} = userSlice.actions
+
+// // Thunk async action
+// export const fetchUser = (userId) => async (dispatch, getState) => {
+//   try {
+//       dispatch(fetchUserStart())
+//       const user = await $.getJSON('/api/user/' + userId)
+//       dispatch(fetchUserFinish(user))
+//   } catch (e) {
+//       alert('Error: ' + e)
+//       dispatch(fetchUserError())
+//   }
+// }
 
 export default slice.reducer;
