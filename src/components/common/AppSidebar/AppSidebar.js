@@ -14,7 +14,7 @@ const AppSidebar = ({ location: { pathname } }) => {
           <figcaption>
             JunCoder
             <br />
-            <small className="intro">I'm crazy about Coding.</small>
+            <small className="intro">I'm crazy about Coding</small>
           </figcaption>
         </figure>
       </div>
