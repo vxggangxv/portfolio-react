@@ -11,10 +11,12 @@ const AppHeader = ({ location: { pathname } }) => {
   };
   pageHeader = capitalize(pathname.slice(1));
 
+  let funcRef = React.createRef();
+
   return (
     <>
       <header className="app-header">
-        <div className="lg-wd lg-pd app-header-area">
+        <div className="lg-wd lg-pd app-header-area" ref={funcRef}>
           <h2 className="page-header">{pageHeader}</h2>
           {pathname === '/project' && <SearchBar></SearchBar>}
         </div>
