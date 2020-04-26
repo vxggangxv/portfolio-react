@@ -1,5 +1,18 @@
 import React from 'react';
 import './ProjectListItem.scss';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
+
+// const LazyImage = ({ image }) => (
+//   <>
+//     <LazyLoadImage
+//       alt={image.alt}
+//       height={image.height}
+//       src={image.src} // use normal <img> attributes as props
+//       width={image.width} />
+//     <span>{image.caption}</span>
+//   </>
+// );
 // import styled from 'styled-components';
 
 // const Item = styled.li`
@@ -20,9 +33,14 @@ const ProjectItem = ({
     <li className="project-item">
       <div className="in-cover">
         <figure className="thumbnail">
-          {/* <img src={`${props.url}`} alt="프로필사진" /> */}
-          {/* <img src={`${process.env.PUBLIC_URL}${path}`} alt="프로필사진" /> */}
-          <img src={require('../../assets' + path)} alt="프로필사진" />
+          {/* <img src={`${props.url}`} alt="프로젝트사진" /> */}
+          {/* <img src={`${process.env.PUBLIC_URL}${path}`} alt="프로젝트사진" /> */}
+          {/* <img src={require('../../assets' + path)} alt="프로젝트사진" /> */}
+          <LazyLoadImage
+            src={require('../../assets' + path)}
+            effect="opacity"
+            alt="프로젝트사진"
+          />
         </figure>
         <div className="info">
           <p className="name">{name}</p>
