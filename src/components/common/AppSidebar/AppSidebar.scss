@@ -10,8 +10,7 @@
   left: 0;
   width: $sidebar-wd;
   height: 100%;
-  // padding-top: 80px;
-  padding-top: 60px;
+  padding-top: 80px;
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 2px 0 10px 5px rgba(0, 0, 0, 0.035);
@@ -45,7 +44,8 @@
   }
 
   .nav {
-    margin-top: 80px;
+    // margin-top: 80px;
+    margin-top: 60px;
     padding-left: calc(#{$sidebar-wd} / 8);
     font-size: 20px;
     color: $font-gray2;
