@@ -2,6 +2,8 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './AppHeader.scss';
 import SearchBar from '../../SearchBar';
+// import { findDOMNode } from 'react-dom';
+// import $ from 'jquery';
 
 const AppHeader = ({ location: { pathname } }) => {
   let pageHeader = '';
