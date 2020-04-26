@@ -11,7 +11,11 @@ const AppSidebar = ({ location: { pathname } }) => {
           {/* <img src={process.env.PUBLIC_URL + '/img/me2.jpg'} alt="프로필사진" /> */}
           {/* <img src={require('assets/img/me2.jpg')} alt="프로필사진" /> */}
           <img src={require('assets/img/me.jpg')} alt="프로필사진" />
-          <figcaption>JunCoder</figcaption>
+          <figcaption>
+            JunCoder
+            <br />
+            <small className="intro">I'm crazy about Coding</small>
+          </figcaption>
         </figure>
       </div>
       <nav className="nav">
