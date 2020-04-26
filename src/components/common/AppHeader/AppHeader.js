@@ -13,6 +13,10 @@ const AppHeader = ({ location: { pathname } }) => {
   };
   pageHeader = capitalize(pathname.slice(1));
 
+  // handleToggle = () => {
+  //   const el = findDOMNode(this.refs.toggle);
+  //   $(el).slideToggle();
+  // };
   let funcRef = React.createRef();
 
   return (
