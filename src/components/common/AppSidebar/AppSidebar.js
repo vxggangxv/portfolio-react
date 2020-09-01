@@ -1,6 +1,25 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, withRouter, NavLink } from 'react-router-dom';
 import './AppSidebar.scss';
+
+const navigation = [
+  {
+    path: '/about',
+    text: 'About',
+  },
+  {
+    path: '/project',
+    text: 'Project',
+  },
+  {
+    path: '/activity',
+    text: 'Activity',
+  },
+  {
+    path: '/plan',
+    text: 'Plan',
+  },
+];
 
 const AppSidebar = ({ location: { pathname } }) => {
   return (
@@ -36,19 +55,11 @@ const AppSidebar = ({ location: { pathname } }) => {
           </p>
         </div>
         <ul className="menu">
-          {/* <li className={`link ${pathname === '/about' ? 'active' : ''}`}> */}
-          <li className={pathname === '/about' ? 'active' : ''}>
-            <Link to="/about">About</Link>
-          </li>
-          <li className={pathname === '/project' ? 'active' : ''}>
-            <Link to="/">Project</Link>
-          </li>
-          <li className={pathname === '/activity' ? 'active' : ''}>
-            <Link to="/activity">Activity</Link>
-          </li>
-          <li className={pathname === '/plan' ? 'active' : ''}>
-            <Link to="/plan">Plan</Link>
-          </li>
+          {navigation.map((item, idx) => (
+            <li key={idx} className={pathname === item.path ? 'active' : ''}>
+              <NavLink to={item.path}>{item.text}</NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
       <small className="copyright">Made by JunCoder with React, Redux</small>
