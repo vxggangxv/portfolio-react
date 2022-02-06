@@ -2,6 +2,7 @@ import React from 'react';
 import './ProjectListItem.scss';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
+import cx from 'classnames';
 
 // const LazyImage = ({ image }) => (
 //   <>
@@ -26,8 +27,12 @@ const ProjectItem = ({
   stack,
   path,
   url,
-  demo,
+  github,
+  feSource,
+  beSource,
+  // demo,
   contrib,
+  isCurrent,
 }) => {
   return (
     <li className="project-item">
@@ -49,7 +54,7 @@ const ProjectItem = ({
           <p className="stack">{stack}</p>
         </div>
       </div>
-      <div className="link-area">
+      <div className={cx('link-area', { current: isCurrent })}>
         {/* mdi-pencil-circle-outline */}
         {/* mdi-vector-link */}
         {/* mdi-open-in-new */}
@@ -61,21 +66,41 @@ const ProjectItem = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="mdi mdi-open-in-new"></i> Link
+            <i className="mdi mdi-open-in-new" /> Link
           </a>
         )}
-        {demo && (
+        {github && (
           <a
             className="link-item"
-            href={demo}
+            href={github}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="mdi mdi-vector-link"></i> Demo
+            <i className="mdi mdi-source-repository" /> Source
+          </a>
+        )}
+        {feSource && (
+          <a
+            className="link-item"
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="mdi mdi-source-repository" /> FeSrc
+          </a>
+        )}
+        {beSource && (
+          <a
+            className="link-item"
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="mdi mdi-source-repository" /> BeSrc
           </a>
         )}
         <span className="contrib">
-          <i className="mdi mdi-lead-pencil"></i> {contrib}
+          <i className="mdi mdi-lead-pencil" /> {contrib}
         </span>
       </div>
     </li>

@@ -11,29 +11,33 @@ const ActivityPage = () => {
               <h2>
                 <strong>Recent Activities</strong>
                 <small>
-                  프론트와 백엔드(Node.js Express) 관련 작업을 하고 있습니다.
+                  프론트와 백엔드(Node.js) 관련 작업을 하고 있습니다.
                 </small>
               </h2>
             </div>
             <div className="body">
               <h3>최근 활동 리스트</h3>
               <p>
-                2019.08. &nbsp; Vue-todo 간단 앱 제작 - Vue, LocalStroage 개발
+                2021.01 ~. &nbsp; 실시간 카드게임 Tichu 개발중, React-native,
+                Socket Server - 프론트, 백엔드 개발
+              </p>
+              <p>
+                2020.03. &nbsp; Conacoin 반응형사이트 제작, 유지관리 - 프론트,
+                백엔드(Node.js) 개발
+              </p>
+              <p>
+                2020.03. &nbsp; Conacoin 관리자사이트 제작, 유지관리 - 프론트,
+                백엔드(Node.js) 개발
+              </p>
+              <p>2020.01. &nbsp; Bizberry 반응형사이트 제작 - 프론트 개발</p>
+              <p>
+                2019.12. &nbsp; Sumblockterminal 반응형사이트 제작 - 프론트 개발
               </p>
               <p>
                 2019.10. &nbsp; Front-end-maker 블로그 제작 - Vue, Firebase 개발
               </p>
               <p>
-                2019.12. &nbsp; Sumblockterminal 반응형사이트 제작 - 프론트 개발
-              </p>
-              <p>2019.12. &nbsp; Bizberry 반응형사이트 제작 - 프론트 개발</p>
-              <p>
-                2020.03 ~. &nbsp; Conacoin 반응형사이트 제작, 유지관리 - 프론트,
-                백엔드(Node.js Express) 개발
-              </p>
-              <p>
-                2020.03 ~. &nbsp; Conacoin 관리자사이트 제작, 유지관리 - 프론트,
-                백엔드(Node.js Express) 개발
+                2019.08. &nbsp; Vue-todo 간단 앱 제작 - Vue, LocalStroage 개발
               </p>
             </div>
           </div>

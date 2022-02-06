@@ -12,12 +12,23 @@ import { getProjectList } from 'store/project';
 // `;
 
 const ProjectPage = () => {
-  const projectList = useSelector((state) => state.project.projectList);
+  const { projectList, appLoading } = useSelector((state) => ({
+    projectList: state.project.projectList,
+    appLoading: state.app.appLoading,
+  }));
+
+  // TEST:
+  useEffect(() => {
+    console.log('appLoading', appLoading);
+  }, [appLoading]);
 
   // let projectList = [];
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getProjectList());
+    // dispatch(getProjectList()).then((result) => {
+    //   console.log('result', result);
+    // });
   }, [dispatch]);
 
   return (
@@ -28,17 +39,8 @@ const ProjectPage = () => {
       <section className="page-content project-content">
         <h2 className="sr-only">프로젝트 리스트</h2>
         <ul className="project-list row">
-          {projectList.map((item, i) => (
-            <ProjectListItem
-              name={item.name}
-              description={item.description}
-              stack={item.stack}
-              path={item.path}
-              url={item.url}
-              demo={item.demo}
-              contrib={item.contrib}
-              key={i}
-            ></ProjectListItem>
+          {projectList.map((item, idx) => (
+            <ProjectListItem key={idx} {...item}></ProjectListItem>
           ))}
         </ul>
       </section>

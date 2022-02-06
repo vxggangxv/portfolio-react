@@ -12,6 +12,7 @@ const AppHeader = ({ location: { pathname } }) => {
     return s.charAt(0).toUpperCase() + s.slice(1);
   };
   pageHeader = capitalize(pathname.slice(1));
+  const isProject = pathname === '/project';
 
   // handleToggle = () => {
   //   const el = findDOMNode(this.refs.toggle);
@@ -23,8 +24,15 @@ const AppHeader = ({ location: { pathname } }) => {
     <>
       <header className="app-header">
         <div className="lg-wd lg-pd app-header-area" ref={funcRef}>
-          <h2 className="page-header">{pageHeader}</h2>
-          {pathname === '/project' && <SearchBar></SearchBar>}
+          <h2 className="page-header">
+            {pageHeader}{' '}
+            {/* {isProject && (
+              <span className="current-badge">
+                <i className="mdi mdi-source-repository" /> current
+              </span>
+            )} */}
+          </h2>
+          {isProject && <SearchBar></SearchBar>}
         </div>
       </header>
     </>

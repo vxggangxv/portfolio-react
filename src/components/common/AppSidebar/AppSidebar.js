@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter, NavLink } from 'react-router-dom';
+import { withRouter, NavLink } from 'react-router-dom';
 import './AppSidebar.scss';
 
 const navigation = [
@@ -42,16 +42,23 @@ const AppSidebar = ({ location: { pathname } }) => {
         <div className="stack-area">
           <p className="title">Stack</p>
           <p className="text">
-            <span className="item">Html5</span>,&nbsp;
-            <span className="item">Css3</span>,&nbsp;
-            <span className="item">Scss</span>,&nbsp;
+            <span className="item">Html5</span>,{' '}
+            <span className="item">Css3</span>,{' '}
+            <span className="item">Scss</span>,{' '}
             <span className="item">Gulp</span>,<br />
-            <span className="item">Javascript</span>,&nbsp;
-            <span className="item">React</span>,&nbsp;
-            <span className="item">Vue</span>,<br />
-            <span className="item">Node.js</span>,&nbsp;
-            <span className="item">Express</span>,&nbsp;
-            <span className="item">Sequelize</span>
+            <span className="item">Javascript</span>,{' '}
+            <span className="item">Typescript</span>,{' '}
+            <span className="item">React</span>,<br />
+            <span className="item">React-redux</span>,{' '}
+            <span className="item">Recoil</span>,{' '}
+            <span className="item">Vue</span>, <br />
+            <span className="item">Node.js</span>,{' '}
+            <span className="item">Express</span>,{' '}
+            <span className="item">Mysql</span>,{' '}
+            <span className="item">Prisma</span>,{' '}
+            <span className="item">Sequelize</span>,{' '}
+            <span className="item">Graphql</span>,{' '}
+            <span className="item">Graphql</span>,{' '}
           </p>
         </div>
         <ul className="menu">

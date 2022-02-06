@@ -2,10 +2,9 @@ import React from 'react';
 import './AboutPage.scss';
 
 const AboutPage = () => {
-
   var today = new Date();
-  var dateString = "2015-01-16";
-  var dateArray = dateString.split("-");
+  var dateString = '2015-01-16';
+  var dateArray = dateString.split('-');
   var dateObj = new Date(dateArray[0], Number(dateArray[1]) - 1, dateArray[2]);
   var betweenDay = (today.getTime() - dateObj.getTime()) / 1000 / 60 / 60 / 24;
   var careerYear = Math.ceil(betweenDay / 365);
@@ -25,12 +24,12 @@ const AboutPage = () => {
               <p>
                 고등학교는 이공 계열을 대학교는 예체능 계열을 졸업하였고
                 <br />
-                현재는 {careerYear}년 차 Web 개발을 하고 있습니다.
+                현재는 {careerYear}년 차 Front 개발을 하고 있습니다.
                 <br />
                 <br />
-                코딩을 통해서 UI를 제작하고 그 안에 로직을 만들어 내어 서로
-                연결하는 작업들에 매력을 느꼈고 앞으로의 제 미래를 책임질
-                직업으로 삼기로 결정했습니다.
+                코딩을 통해서 UI를 만들고, 로직을 만들어 내어 서로 연결하고
+                기능들을 개발하는 작업들에 매력을 느꼈고 앞으로의 제 미래를
+                책임질 직업으로 삼기로 결정했습니다.
                 <br />
                 <br />
                 웹의 다양한 기술들을 구현하는 작업에 흥미를 느끼고 제가 직접
@@ -41,7 +40,8 @@ const AboutPage = () => {
                 싶습니다.
                 <br />
                 <br />
-                항상 열의를 가지고 계속해서 성장하겠습니다.
+                훌륭한 개발자가 되기 위해 항상 열의를 가지고 계속해서
+                성장하겠습니다.
               </p>
             </div>
           </div>

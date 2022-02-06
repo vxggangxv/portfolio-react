@@ -1,3 +1,3 @@
-# portfolio-react
+# Rortfolio
 
-## portfolio - made by juncoder with react
+- made by juncoder with react
