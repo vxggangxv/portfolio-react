@@ -34,10 +34,11 @@ const ActivityPage = () => {
                 매력적입니다.
                 <br />
                 <br />
-                또한, 이제는 전통적인 Waterfall 개발방식에서 벗어나 Agile한
-                개발방식으로 전환이 필요한다고 생각합니다. <br />좀 더
-                구체적이고 유연하며(daily scrum), 매 피드백(sprint review)을
-                통해 개발에 역동성을 줄 수 있습니다.
+                또한, 경우에 따라서 전통적인 Waterfall 개발방식에서 벗어나
+                Agile한 개발방식으로 전환이 필요한다고 생각합니다. <br />
+                단순히 기획후 기간에 맞혀 작업을 하는 것보다 좀 더 구체적이고
+                유연하며(daily scrum), 매 피드백(sprint review)을 통해 개발에
+                역동성을 줄 수 있습니다.
               </p>
             </div>
 
