@@ -22,6 +22,42 @@ const ActivityPage = () => {
                 Socket Server - 프론트, 백엔드 개발
               </p>
               <p>
+                2021.11. &nbsp; React-native project boilerplate with with
+                recoil, @apollo/client, styled-components, react-navigation
+                <br />(
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/vxggangxv/rn-bare-workflow"
+                  style={{ textDecoration: 'underline' }}
+                >
+                  https://github.com/vxggangxv/rn-bare-workflow
+                </a>
+                )
+              </p>
+              <p>
+                2021.10. &nbsp; React project boilerplate with React-redux,
+                redux-saga, redux-toolkit, stylec-components, typescript
+                <br />(
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/vxggangxv/react-project-boilerplate/tree/v2.1.0"
+                  style={{ textDecoration: 'underline' }}
+                >
+                  https://github.com/vxggangxv/react-project-boilerplate/tree/v2.1.0
+                </a>
+                ,{' '}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/vxggangxv/react-project-boilerplate/tree/v2.2.0-typescript"
+                  style={{ textDecoration: 'underline' }}
+                >
+                  https://github.com/vxggangxv/react-project-boilerplate/tree/v2.2.0-typescript)
+                </a>
+              </p>
+              <p>
                 2021.08. &nbsp; react-redux, redux-saga, redux-toolkit기반
                 커스텀 라이브러리 redux-toolkit-saga-combinator 개발 npm 배포
               </p>
